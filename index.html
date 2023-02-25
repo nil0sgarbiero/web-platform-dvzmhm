@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Login - AppTreino</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -9,15 +9,47 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <form action="">
+      <div>
+        <label for="">Email</label>
+      </div>
+      <div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          onchange="validateFields()"
+          placeholder="Digite seu E-mail"
+        />
+      </div>
+      <div>
+        <label for="">Senha</label>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Digite Sua Senha"
+        />
+      </div>
+      <div>
+        <button type="button" class="clear" id="recoverpass" disabled="true">
+          Recuperar Senha
+        </button>
+      </div>
+      <div>
+        <button type="button" class="solid" id="login" disabled="true">
+          Login
+        </button>
+      </div>
+
+      <div>
+        <button type="button" class="outline">Criar Usuário</button>
+      </div>
+    </form>
   </body>
 </html>
